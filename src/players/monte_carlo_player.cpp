@@ -99,6 +99,8 @@ MonteCarloPlayer::play(const State& state) {
     std::shuffle(legal_actions.begin(), legal_actions.end(), randomness);
     std::vector<float> score_sums(legal_actions.size(), 0);
     std::vector<int> count(legal_actions.size(), 0);
+    // Print number of legal actions
+    std::cout << "nb legal: " << legal_actions.size() << std::endl;
 
     Game game = Game(state.get_rules());
     for (int p = 0; p < state.get_rules()->player_count; p++) {

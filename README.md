@@ -6,6 +6,86 @@
 
 A python module for playing variations of the board game Azul, implemented in C++.
 
+
+## 01/02/2024 notes
+With opening heuristics + alpha-beta pruning, is a round solvable?
+At ~ 10us per action and 30 seconds of time budget, we have 30 000 000 actions.
+For now we're very far from the end of a round (TODO estimate the value of alpha-beta here). 
+However I believe expert players play with very rigid heuristics, specially at the begining of the rounds.
+
+```
+number of legal actions: 108
+number of legal actions: 102
+number of legal actions: 77
+number of legal actions: 47
+number of legal actions: 32
+number of legal actions: 18
+number of legal actions: 15
+number of legal actions: 12
+number of legal actions: 10
+number of legal actions: 7
+number of legal actions: 2
+Round tree size: 578676084940800
+number of legal actions: 71
+number of legal actions: 54
+number of legal actions: 50
+number of legal actions: 31
+number of legal actions: 22
+number of legal actions: 21
+number of legal actions: 14
+number of legal actions: 8
+number of legal actions: 6
+number of legal actions: 5
+number of legal actions: 3
+number of legal actions: 1
+Round tree size: 27674916192000
+number of legal actions: 61
+number of legal actions: 50
+number of legal actions: 35
+number of legal actions: 22
+number of legal actions: 14
+number of legal actions: 9
+number of legal actions: 7
+number of legal actions: 4
+number of legal actions: 3
+number of legal actions: 2
+Round tree size: 49713048000
+number of legal actions: 41
+number of legal actions: 35
+number of legal actions: 26
+number of legal actions: 19
+number of legal actions: 10
+number of legal actions: 9
+number of legal actions: 7
+number of legal actions: 5
+number of legal actions: 3
+number of legal actions: 2
+Round tree size: 13398021000
+number of legal actions: 39
+number of legal actions: 30
+number of legal actions: 21
+number of legal actions: 19
+number of legal actions: 18
+number of legal actions: 17
+number of legal actions: 12
+number of legal actions: 7
+number of legal actions: 6
+number of legal actions: 4
+number of legal actions: 1
+Round tree size: 287985559680
+number of legal actions: 35
+number of legal actions: 32
+number of legal actions: 24
+number of legal actions: 18
+number of legal actions: 10
+number of legal actions: 9
+number of legal actions: 6
+number of legal actions: 4
+number of legal actions: 3
+number of legal actions: 1
+Round tree size: 3135283200
+```
+
 ## Install through pip
 
 The python module can be simply installed through pip using the following command.
